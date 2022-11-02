@@ -1,0 +1,148 @@
+.EmployeeSection {
+  width: 100%;
+  margin: 30px;
+  padding: 30px !important;
+  overflow: hidden;
+  background-color: white;
+  :global {
+    .ant-page-header {
+      margin-bottom: 30px;
+    }
+  }
+  table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    thead {
+      tr {
+        display: flex;
+        th {
+          width: 14.285%;
+          word-break: break-all;
+          &:first-child {
+            width: 70px;
+          }
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        display: flex;
+        td {
+          width: 14.285%;
+          word-break: break-all;
+          &:first-child {
+            width: 70px;
+          }
+        }
+      }
+    }
+  }
+
+  .breadcrumb {
+    height: 40px;
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    a {
+      font-size: 16px;
+    }
+  }
+
+  .breadcrumbItem {
+    margin-left: 20px;
+    font-size: 20px;
+  }
+
+  .employeTable {
+    padding-top: 30px;
+    background-color: #fff;
+
+    .table_header {
+      color: rgba(51, 51, 51, 0.892);
+      font-size: 1.2rem;
+    }
+  }
+
+  :global {
+    .ant-table {
+      overflow: auto;
+    }
+
+    .anticon-edit {
+      color: #1183e1;
+    }
+    .ant-table-placeholder {
+      .ant-table-cell {
+        width: 100%;
+      }
+    }
+
+    .ant-table-placeholder {
+      .ant-table-cell {
+        width: 100%;
+      }
+    }
+    .anticon-delete {
+      color: #ff3b3b;
+    }
+  }
+  .searchBox {
+    width: 100%;
+    height: 40px;
+  }
+  .editBtn {
+    color: #1183e1;
+    border-color: #1183e1;
+    text-shadow: none;
+    width: 32px;
+    height: 32px;
+    margin: 4px;
+    line-height: 32px;
+    border: 1px solid;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 2%);
+    padding: 2.4px 0;
+    font-size: 16px;
+    border-radius: 4px;
+    vertical-align: -3px;
+    cursor: pointer;
+  }
+  .deleteBtn {
+    color: #ff4d4f;
+    border-color: #ff4d4f;
+    background: #fff;
+    width: 32px;
+    height: 32px;
+    margin: 4px;
+    line-height: 32px;
+    border: 1px solid;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 2%);
+    padding: 2.4px 0;
+    font-size: 16px;
+    border-radius: 4px;
+    vertical-align: -3px;
+    cursor: pointer;
+  }
+}
+
+:global {
+  .ant-modal-confirm-btns {
+    display: flex;
+    flex-flow: row-reverse;
+    .ant-btn {
+      margin-right: 8px;
+    }
+  }
+  .ant-picker-time-panel {
+    display: none !important;
+  }
+}
+@media (max-width: 580px) {
+  .EmployeeSection {
+    margin: 10px;
+  }
+}

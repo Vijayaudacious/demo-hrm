@@ -1,0 +1,48 @@
+@import "~antd/dist/antd.less";
+.main {
+  width: auto;
+  background-color: #fff;
+  padding: 1rem;
+  table {
+    // width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+    thead {
+      tr {
+        th {
+          width: 100vw;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          width: 100vw;
+        }
+      }
+    }
+  }
+}
+
+:global {
+  .anticon-check,
+  .anticon-close {
+    border-radius: 40px;
+
+    color: #fff;
+  }
+  .anticon-check {
+    color: green;
+  }
+  .anticon-close {
+    margin-left: 10px;
+    color: red;
+  }
+}
+@media (max-width: 580px) {
+  .main {
+    padding: 10px;
+  }
+}

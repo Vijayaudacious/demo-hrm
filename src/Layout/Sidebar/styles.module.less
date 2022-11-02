@@ -1,0 +1,108 @@
+@import "~antd/dist/antd.less";
+
+body {
+  margin: 0;
+}
+
+.sidebar {
+  transition: all 0.3s;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #29539b;
+  background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
+  overflow: auto;
+  text-align: right;
+
+  .logoImages {
+    max-width: 200px;
+    margin: 1.7rem 0;
+    padding: 0 1rem;
+    object-fit: contain;
+  }
+
+  :global {
+    .ant-menu {
+      background-color: transparent;
+    }
+
+    .ant-layout-sider-collapsed {
+      .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected,
+      .ant-menu-item:active,
+      .ant-menu-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0;
+        margin: 15px 0;
+      }
+      .ant-menu-item a span {
+        display: flex;
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+      }
+      strong {
+        display: none;
+      }
+    }
+
+    .ant-layout-sider {
+      background-color: transparent;
+    }
+
+    .ant-menu-item {
+      height: 50px;
+      line-height: 50px;
+      margin: 14px 8px;
+
+      a {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+
+        span {
+          margin-right: 15px;
+          background-color: rgb(0 0 0 / 16%);
+          border-radius: 50px;
+          padding: 12px;
+        }
+      }
+    }
+    .ant-menu:not(.ant-menu-horizontal) {
+      .ant-menu-item-selected,
+      .ant-menu-item:active {
+        height: 50px;
+        line-height: 50px;
+        background-color: #1183e1;
+        margin: 14px 8px;
+        border-radius: 10px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.header {
+  height: 80px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  .userIcon {
+    width: 80px;
+  }
+}
+
+@media (max-width: 580px) {
+  .sidebar {
+    :global {
+      aside.ant-layout-sider.ant-layout-sider-dark.ant-layout-sider-collapsed {
+        display: block;
+      }
+      aside.ant-layout-sider.ant-layout-sider-dark {
+        display: none;
+      }
+    }
+  }
+}

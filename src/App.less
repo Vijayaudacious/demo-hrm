@@ -1,0 +1,71 @@
+@import "~antd/lib/style/themes/default.less";
+@import "~antd/dist/antd.less";
+html,
+body {
+  overflow-x: hidden;
+}
+
+.ant-layout {
+  background-color: #f4faff;
+}
+.ant-table {
+  table {
+    border: 1px solid #e7e7e7;
+  }
+}
+.ant-tag-blue {
+  padding: 2px 10px;
+  margin-bottom: 5px;
+}
+
+.ant-breadcrumb {
+  margin: 0px 30px;
+}
+
+.fc {
+  .fc-button-group {
+    .fc-button {
+      text-transform: capitalize;
+    }
+  }
+}
+.fc-direction-ltr {
+  .fc-daygrid-event.fc-event-end {
+    text-align: center;
+  }
+}
+.fc-direction-rtl {
+  .fc-daygrid-event.fc-event-start {
+    text-align: center;
+  }
+}
+.ant-menu-inline {
+  border-right: 0;
+}
+.ant-menu-vertical {
+  border-right: 0;
+}
+.ant-menu-vertical-left {
+  border-right: 0;
+}
+th {
+  .fc-scroller {
+    overflow: hidden !important;
+  }
+}
+.fc-view-harness,
+.fc-view-harness-active {
+  height: 100vh !important;
+}
+// @media (min-width: 990px) {
+//   .fc-scroller-liquid-absolute {
+//     overflow: hidden !important;
+//   }
+// }
+@media (max-width: 989px) {
+  table {
+    min-width: 1200px;
+    overflow-y: auto;
+  }
+}
+

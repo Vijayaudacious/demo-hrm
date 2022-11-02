@@ -1,0 +1,11 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cSpell.words": [
+    "Commontab"
+  ],
+  "debug.allowBreakpointsEverywhere": true,
+  "files.autoGuessEncoding": true
+}

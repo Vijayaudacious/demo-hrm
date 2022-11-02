@@ -1,0 +1,99 @@
+.mainSection {
+  margin: 30px;
+  background-color: white;
+  .roleTable {
+    font-size: 16px;
+    padding: 1rem;
+    overflow: auto;
+    background-color: #fff;
+
+    .permission {
+      text-align: center;
+      color: green;
+      font-size: large;
+      margin-left: 15px;
+
+    }
+
+    .noPermission {
+      color: red;
+      font-size: large;
+    }
+
+    p {
+      margin: 0;
+
+      span {
+        display: block;
+        margin: auto;
+      }
+    }
+
+    :global {
+      .ant-table-content {
+        // height: calc(100vh - 390px);
+        overflow: hidden;
+      }
+      .ant-table-thead {
+        tr {
+          th {
+            padding: 16px 12px;
+            word-break: break-all;
+          }
+        }
+      }
+      .ant-table-tbody {
+        tr {
+          td {
+            padding: 16px 12px;
+            word-break: break-all;
+          }
+        }
+      }
+    }
+    .actionButtons {
+      margin: 1px;
+      align-items: center;
+
+    }
+  }
+
+  .headerItems {
+    float: right;
+    margin-right: 3%;
+
+    .searching_field {
+      width: 220px;
+    }
+
+    .main_table {
+      margin-top: 2rem;
+      overflow: hidden !important;
+    }
+
+    .add_employee {
+      float: right;
+      padding: 0 20px;
+      margin-left: 10px;
+    }
+  }
+}
+:global {
+  .ant-modal-confirm-btns {
+    display: flex;
+    flex-flow: row-reverse;
+    .ant-btn {
+      margin-right: 8px;
+    }
+  }
+}
+.searchBox {
+  width: 25%;
+  margin: 0 0 10px 20px;
+  height: 40px;
+}
+@media (max-width: 768px) {
+  .searchBox {
+    width: calc(100% - 40px) !important;
+  }
+}

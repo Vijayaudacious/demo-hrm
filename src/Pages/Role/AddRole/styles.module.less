@@ -1,0 +1,29 @@
+.mainSection {
+  width: auto;
+  height: calc(100vh - 240px);
+  background-color: #ffffff;
+  margin: 30px;
+  h1 {
+    margin-bottom: 30px;
+  }
+}
+.loginForm {
+  .loginInput {
+    height: 45px;
+    border: 1px solid rgba(2, 12, 75, 0.12);
+    border-radius: 8px;
+  }
+  .buttonBlue {
+    width: 150px;
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .buttonBlue {
+    width: calc(50% - 5px) !important;
+    margin-bottom: 10px;
+  }
+}

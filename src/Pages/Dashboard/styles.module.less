@@ -1,0 +1,199 @@
+.mainDashboard {
+  width: auto;
+  margin: 30px;
+  overflow: hidden;
+  .AdminCalender {
+    width: auto;
+    background-color: #fff;
+    margin-top: 30px;
+    padding: 30px;
+  }
+
+  .breadcrumb {
+    height: 40px;
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    a {
+      font-size: 16px;
+    }
+  }
+
+  .breadcrumbItem {
+    margin-left: 20px;
+    font-size: 20px;
+  }
+
+  .viewButton {
+    position: absolute;
+    right: 30px;
+    top: 70px;
+  }
+
+  .cards {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+
+    .iconBlue,
+    .iconGreen,
+    .iconOrange,
+    .iconCyan {
+      border-radius: 6px;
+    }
+
+    .iconBlue {
+      background-color: #03a9f4;
+    }
+
+    .iconGreen {
+      background-color: #8bc34a;
+    }
+
+    .iconOrange {
+      background-color: #ff5722;
+    }
+
+    .iconCyan {
+      background-color: #ff9800;
+    }
+
+    .cardIcon {
+      padding: 20px;
+      font-size: 30px;
+      border-radius: 100%;
+      margin: 10px;
+      border-radius: 100px 10px 10px 100px;
+      color: #fff;
+    }
+
+    .cardText {
+      width: 100%;
+    }
+
+    .cardName {
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    .cardValue {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 600;
+      margin: 0;
+    }
+  }
+
+  .green {
+    background-color: #08c8f6;
+  }
+
+  :global {
+    .ant-page-header {
+      margin-bottom: 30px;
+    }
+
+    .ant-radio-group {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 20px 0 20px 0;
+    }
+
+    .fc-col-header-cell-cushion {
+      padding: 10px;
+      color: #3e5569;
+    }
+
+    .fc-col-header {
+      width: 100%;
+    }
+
+    .fc-button-primary {
+      background-color: #1183e1;
+      border: 1px solid #1183e1;
+
+      &:hover,
+      &:active {
+        background-color: #fff !important;
+        color: #1183e1 !important;
+        border: 1px solid #1183e1;
+        outline: none;
+        box-shadow: none;
+      }
+    }
+
+    .fc-button-primary:not(:disabled).fc-button-active:focus {
+      box-shadow: none;
+      outline: none;
+    }
+  }
+}
+.mbottom {
+  margin-bottom: 10px;
+}
+table {
+  tr {
+    th {
+      background-color: #f1faff;
+
+      a {
+        color: #3e5569;
+        padding: 10px 0 !important;
+      }
+    }
+  }
+}
+.searchBox {
+  width: 25%;
+  height: 40px;
+}
+
+@media (max-width: 768px) {
+  .searchBox {
+    width: 100%;
+  }
+
+  .mainDashboard {
+    .breadcrumb {
+      justify-content: flex-start;
+    }
+    :global {
+      .ant-radio-button-wrapper {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
+@media (max-width: 580px) {
+  :global {
+    .fc-header-toolbar {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .mainDashboard {
+    margin: 10px;
+    .AdminCalender {
+      margin-top: 10px;
+      padding: 10px;
+    }
+  }
+}
+
+.ant-layout.ant-layout-has-sider > .ant-layout,
+.ant-layout.ant-layout-has-sider > .ant-layout-content {
+  margin-left: 204px !important;
+}
+
+.ant-row .styles_sidebar__9h8Zd {
+  position: fixed !important;
+}
